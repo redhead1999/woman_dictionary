@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+    <android.support.p003v7.widget.CardView android:id="@+id/cv" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:padding="16dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/l_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#000" android:id="@+id/wordtext" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/expandableLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/l_layout">
+                <View android:id="@+id/view" android:background="#3c4042" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <TextView android:textColor="#000" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/mean" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view"/>
+                <TextView android:textSize="20sp" android:textColor="#f20972" android:gravity="left" android:id="@+id/meaningtext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/mean"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.p003v7.widget.CardView>
+</LinearLayout>
